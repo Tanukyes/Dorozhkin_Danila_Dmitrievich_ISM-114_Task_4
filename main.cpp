@@ -1,4 +1,5 @@
-#include "Classes.h"
+#include "Exponent.h"
+#include "Power.h"
 
 int main()
 {
