@@ -2,17 +2,23 @@
 
 Power::Power()
 {
-	x = 0;
-	a = 0;
+    x = 0;
+    a = 0;
 }
 
-Power::Power(double xx, double aa)
+Power::Power(const double x, const double a)
 {
-	x = xx;
-	a = aa;
+    this->x = x;
+    this->a = a;
+}
+
+Power::~Power()
+{
+    this->x = NULL;
+    this->a = NULL;
 }
 
 double Power::getY()
 {
-	return pow(x, a);
+    return pow(x, a);
 }
