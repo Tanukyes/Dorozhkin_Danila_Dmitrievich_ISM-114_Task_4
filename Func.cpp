@@ -2,10 +2,15 @@
 
 Func::Func()
 {
-	x = 0;
+    x = 0;
 }
 
-Func::Func(double xx)
+Func::Func(const double x)
 {
-	x = xx;
+    this->x = x;
+}
+
+Func::~Func()
+{
+    this->x = NULL;
 }
