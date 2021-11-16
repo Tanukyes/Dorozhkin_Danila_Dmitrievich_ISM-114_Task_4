@@ -1,20 +1,22 @@
+
+#ifndef TASK4_EXPONENT_H
+#define TASK4_EXPONENT_H
+
+#endif //TASK4_EXPONENT_H
 #pragma once
 #include "Func.h"
 
-/// <summary>
-/// степенная функция
-/// </summary>
+
 class Exponent : public Func
 {
 private:
-	int a; // основание (x - показатель)
+    int a;
 public:
-	// конструктор по умолчанию
-	Exponent();
+    Exponent();
 
-	// конструктор с параметрами
-	Exponent(double aa, double xx);
+    Exponent(double a, double x);
 
-	// переопределенный метод вычисления значения функции
-	double getY();
+    ~Exponent();
+
+    double getY();
 };
