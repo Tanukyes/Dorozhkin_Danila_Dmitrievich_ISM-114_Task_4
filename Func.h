@@ -1,3 +1,8 @@
+
+#ifndef TASK4_FUNC_H
+#define TASK4_FUNC_H
+
+#endif //TASK4_FUNC_H
 #pragma once
 #include <cmath>
 #define _USE_MATH_DEFINES
@@ -5,20 +10,17 @@
 #include <string>
 using namespace std;
 
-/// <summary>
-/// базовый класс функции
-/// </summary>
+
 class Func
 {
 protected:
-	double x; // аргумент
+    double x;
 public:
-	// конструктор класса по умолчанию
-	Func();
+    Func();
 
-	// конструктор класса с параметрами
-	Func(double xx);
+    Func(double x);
 
-	// чистый виртуальный метод вычисления значения функции
-	virtual double getY() = 0;
+    ~Func();
+
+    virtual double getY() = 0;
 };
