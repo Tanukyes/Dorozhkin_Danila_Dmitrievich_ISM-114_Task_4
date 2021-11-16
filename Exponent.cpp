@@ -2,17 +2,22 @@
 
 Exponent::Exponent()
 {
-	x = 0;
-	a = 0;
+    x = 0;
+    a = 0;
 }
 
-Exponent::Exponent(double aa, double xx)
+Exponent::Exponent(const double a, const double x)
 {
-	x = xx;
-	a = aa;
+    this->x = x;
+    this->a = a;
+}
+Exponent::~Exponent()
+{
+    this->x = NULL;
+    this->a = NULL;
 }
 
 double Exponent::getY()
 {
-	return pow(a, x);
+    return pow(a, x);
 }
