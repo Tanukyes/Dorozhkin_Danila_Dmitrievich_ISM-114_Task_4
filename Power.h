@@ -1,20 +1,23 @@
+
+
+#ifndef TASK4_POWER_H
+#define TASK4_POWER_H
+
+#endif //TASK4_POWER_H
 #pragma once
 #include "Func.h"
 
-/// <summary>
-/// степенная функция
-/// </summary>
+
 class Power : public Func
 {
 private:
-	double a; // показатель степени
+    double a;
 public:
-	// конструктор по умолчанию
-	Power();
+    Power();
 
-	// конструктор с параметрами
-	Power(double xx, double aa);
+    Power(double x, double a);
 
-	// переопределенный метод вычисления значения функции
-	double getY();
+    ~Power();
+
+    double getY();
 };
